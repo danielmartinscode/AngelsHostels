@@ -6,10 +6,16 @@ html{
     font-family: sans-serif;
 }
 
+h1, h2, h3, h4{
+    font-family: "Oxygen", sans-serif;
+}
+
 .maxWidth{
     max-width: 70.25em;
     margin: auto;
 }
+
+/* Estilos do Top header */
 
 .top_header{
     text-align: center;
@@ -22,6 +28,7 @@ html{
 .top_header_nav ul{
     list-style-type: none;
     padding: 0;
+    margin-bottom: 0;
 }
 
 .top_header_nav a{
@@ -59,5 +66,95 @@ html{
 
     .top_header_nav a:hover{
         background-color: color-mix(in srgb, var(--primary-color), white 85%);
+    }
+}
+
+/* Estilos do Hero Banner */
+
+.heroBanner{
+    background-color: #f6f6f6;
+    text-align: center;
+    padding: 1em;
+}
+
+.heroBanner_iconPlay{
+    width: 5em;
+    height: 5em;
+    display: none;
+}
+
+.heroBanner_iconPlay img{
+    width: 100%;
+}
+
+.heroBanner_title{
+    font-size: 1.5em;
+    color: var(--primary-color);
+    margin: 1.5em 0;
+}
+
+.heroBanner_subtitle{
+    font-size: 1em;
+    color: color-mix(in srgb, var(--primary-color), white);
+    line-height: 1.5em;
+}
+
+.heroBanner_btn{
+    display: inline-block;
+    padding: .9em 2em;
+    text-decoration: none;
+    color: white;
+    background-color: #58c4c4;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 48.75em ){
+    .heroBanner{
+        background-color: var(--primary-color);
+    }
+
+    .heroBanner_iconPlay{
+        display: block;
+        margin: auto;
+    }
+
+    .heroBanner_title, .heroBanner_subtitle{
+        color: white;
+    }
+}
+
+@media screen and (min-width: 56.25em){
+    .heroBanner{
+        background-image: url(../images/bg_topo_1198x670.jpg);
+        aspect-ratio: 1198 / 670;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .heroBanner .maxWidth{
+        margin: initial;
+        margin-bottom: 4em;
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 74em){
+    .heroBanner{
+        background-image: url(../images/bg_topo_1600x1374.jpg);
+        background-position: center top;
+        background-color: var(--primary-color);
+        background-repeat: no-repeat;
+        max-height: 80vh;
+        width: 100%;
+    }
+
+    .heroBanner .maxWidth{
+        width: 50%;
+    }
+
+    .heroBanner_iconPlay{
+        width: 7em;
+        height: 7em;
     }
 }
