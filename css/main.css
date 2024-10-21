@@ -270,3 +270,11 @@ h1, h2, h3, h4{
         max-height: 182px;
     }
 }
+
+.footer{
+    background-color: #25303e;
+    color: #83969f;
+    text-align: center;
+    padding: 2em;
+
+}
